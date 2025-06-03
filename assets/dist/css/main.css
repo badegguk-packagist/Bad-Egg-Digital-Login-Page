@@ -1,0 +1,74 @@
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
+  \*******************************************************************************************************************************************************/
+.bedlp-login {
+  background-color: black;
+}
+.bedlp-login a {
+  color: #f58762;
+}
+.bedlp-login .button-primary {
+  background-color: #2f4976;
+  border-color: #2f4976;
+}
+.bedlp-login #login {
+  position: relative;
+  z-index: 1;
+}
+.bedlp-login #login #backtoblog a,
+.bedlp-login #login #nav a {
+  color: white;
+}
+.bedlp-login .wp-login-logo {
+  display: none;
+}
+.bedlp-animated-brand {
+  position: relative;
+  max-width: 15em;
+  margin: 0 auto 20px;
+}
+.bedlp-animated-brand-guide, .bedlp-animated-brand-foreground .bedlp-animated-brand-icon {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bedlp-animated-brand-foreground {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  padding-top: 33%;
+}
+.bedlp-animated-brand-guide {
+  opacity: 0.5;
+}
+.bedlp-animated-brand-icon {
+  position: absolute;
+  top: auto;
+  bottom: 10%;
+  left: 5%;
+  right: 5%;
+  width: 100%;
+  -webkit-transform: translateX(-16%);
+          transform: translateX(-16%);
+}
+.bedlp-bg {
+  position: fixed;
+  inset: 0;
+}
+.bedlp-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bedlp-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}

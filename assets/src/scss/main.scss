@@ -1,0 +1,86 @@
+.bedlp {
+  &-login {
+    background-color: black;
+
+    a {
+      color: #f58762;
+    }
+
+    .button-primary {
+      background-color: #2f4976;
+      border-color: #2f4976;
+    }
+
+    #login {
+      position: relative;
+      z-index: 1;
+
+      #backtoblog,
+      #nav {
+        a {
+          color: white;
+        }
+      }
+    }
+
+    .wp-login-logo {
+      display: none;
+    }
+  }
+
+  &-animated-brand {
+    position: relative;
+    max-width: 15em;
+    margin: 0 auto 20px;
+
+    &-guide,
+    &-foreground
+    &-icon {
+      display: block;
+      object-fit: contain;
+    }
+
+    &-foreground {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+      object-position: center bottom;
+      padding-top: 33%;
+    }
+
+    &-guide {
+      opacity: 0.5;
+    }
+
+    &-icon {
+      position: absolute;
+      top: auto;
+      bottom: 10%;
+      left: 5%;
+      right: 5%;
+      width: 100%;
+      transform: translateX(-16%);
+    }
+  }
+
+  &-bg {
+    position: fixed;
+    inset: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(black, 0), rgba(black, 0.8));
+    }
+  }
+}
