@@ -30,23 +30,8 @@ if(!defined('BEDLP_FILE')) define('BEDLP_FILE', __FILE__);
 if(!defined('BEDLP_DIR')) define('BEDLP_DIR', plugin_dir_path( __FILE__ ));
 if(!defined('BEDLP_URL')) define('BEDLP_URL', plugin_dir_url( __FILE__ ));
 
-require_once __DIR__ . '/lib/enqueue.php';
-require_once __DIR__ . '/lib/templates.php';
+require_once( __DIR__ . '/lib/Enqueue.php' );
+require_once( __DIR__ . '/lib/Templates.php' );
 
-/*
-|--------------------------------------------------------------------------
-| Autoload PSR-4 files
-|--------------------------------------------------------------------------
-*/
-
-function autoload_psr4($name) {
-    $path = BEDLP_DIR . '/' . $name . '/*.php';
-    $namespace = __NAMESPACE__ . '\\' . $name;
-
-    foreach(glob($path) as $filename) {
-        $class = $namespace . '\\' . basename($filename, '.php');
-        new $class();
-    }
-}
-
-autoload_psr4('lib');
+new lib\Enqueue();
+new lib\Templates();
