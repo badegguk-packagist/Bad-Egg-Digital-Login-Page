@@ -1,7 +1,7 @@
 {
-  "name": "badegguk/bad-egg-login-page",
+  "name": "badegguk/bad-egg-digital-login-page",
   "description": "Applies Bad Egg Digital Branding elements to the Wordpress login page.",
-  "homepage": "https://gitlab.com/tdi-sustainability/tdi-gdpr-compliance",
+  "homepage": "https://github.com/badegguk-packagist/Bad-Egg-Digital-Login-Page",
   "type": "wordpress-plugin",
   "license": "GPLv3"
 }
